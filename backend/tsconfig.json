@@ -3,12 +3,12 @@
   "compilerOptions": {
     // File Layout
     "rootDir": ".",
-    // "outDir": "./dist",
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "commonjs",
-    "target": "es2017",
+    "target": "es6",
     "esModuleInterop": true,
     "types": ["node", "vitest"],
     // For nodejs:
