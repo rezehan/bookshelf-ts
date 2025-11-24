@@ -1,6 +1,6 @@
 import mysql from "mysql2";
 
-const db = mysql.createConnection({
+const db: mysql.Connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "",
