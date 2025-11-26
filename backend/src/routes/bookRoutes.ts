@@ -13,4 +13,12 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/books", (req, res) => {
+    db.query("SELECT * FROM book", (err, rows) => {
+        if (err) return res.status(500).json({ message: "DB error" });
+        res.json(rows);
+    });
+});
+
+
 export default router;
